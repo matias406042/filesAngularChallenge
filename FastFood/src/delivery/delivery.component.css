@@ -1,0 +1,37 @@
+div {
+    border: 1px solid #ddd;  /* Borde suave */
+    border-radius: 8px;  /* Bordes redondeados */
+    padding: 20px;  /* Espacio interno */
+    margin-bottom: 20px;  /* Espaciado entre divs */
+    background-color: #f9f9f9;  /* Fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  }
+  
+  h2 {
+    color: #4CAF50;  /* Color del encabezado */
+    font-size: 1.5rem;  /* Tamaño de la fuente */
+    margin-bottom: 10px;  /* Separación del texto siguiente */
+  }
+  
+  button {
+    background-color: #4CAF50;  /* Color verde en el botón */
+    color: white;  /* Color de texto blanco */
+    padding: 10px 15px;  /* Espaciado interno */
+    border: none;  /* Sin borde */
+    border-radius: 5px;  /* Bordes redondeados */
+    cursor: pointer;  /* Manito al pasar por encima */
+    transition: background-color 0.3s ease;  /* Transición suave al hacer hover */
+  }
+  
+  button:hover {
+    background-color: #45a049;  /* Color más oscuro al hacer hover */
+  }
+  
+  div > div {
+    margin-bottom: 15px;  /* Espaciado entre los ítems de pedidos */
+    font-size: 1rem;  /* Tamaño de fuente estándar */
+  }
+  
+  div > div:last-child {
+    margin-bottom: 0;  /* El último elemento no tiene margen inferior */
+  }

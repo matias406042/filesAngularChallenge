@@ -1,0 +1,24 @@
+<div class="form">
+
+<h1>COMPONENTE COCINA</h1>
+
+<h2>*Pendiente de cocinar</h2>
+@for (pedido of servicioInjectado.pedidosIngresados; track $index)
+ { 
+    <div class="row">
+        {{"("+pedido.number+")"}} {{"("+pedido.description+")"}} 
+        @if(pedidoEnCocion ===undefined)
+        {
+            <button (click)="cocinar(pedido)">Cocinar</button>
+        }
+        @else {<button disabled (click)="cocinar(pedido)">Cocinar</button>}
+    </div>   
+ }
+<h2>Pedidos en coccion</h2>
+@if(pedidoEnCocion){
+
+    <p>.{{"("+pedidoEnCocion.number+")"}} {{pedidoEnCocion.description}}
+    <button (click)="terminarPedido()">PEDIDO TERMINADO</button> </p>
+}
+
+</div>

@@ -1,0 +1,18 @@
+<div class="form-container">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+      
+        <div>
+            <label for="title">POS COMPONENT:</label>
+
+        </div>     
+        <div>
+            <label for="name">Nombre:</label>
+            <input  type="text" id="name" name="name" ngModel  required>
+        </div>
+        <div>
+            <label for="description">Pedido:</label>
+            <input  type="text" id="description" name="description" ngModel required>
+        </div>     
+        <button type="submit">ordenar</button>
+    </form>
+</div>

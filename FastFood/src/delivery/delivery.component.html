@@ -1,0 +1,16 @@
+<div>
+
+<h2>Pedidos ingresados</h2>
+{{servicioInjectado.pedidosIngresados|json}}
+
+
+<h2>Pedidos Listo para entregar </h2>
+@for (ped of servicioInjectado.pedidosListos; track ped ;let i = $index) {
+
+   <div>
+    {{ ped.name }} - {{ ped.description }}  {{"Numero:"+ ped.number }} <button (click)="entregar(ped)">Entregar</button>
+   </div>    
+
+}
+
+</div>

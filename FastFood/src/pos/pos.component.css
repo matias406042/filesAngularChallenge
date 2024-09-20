@@ -1,0 +1,38 @@
+.form-container {
+    width: 100%; /* Ajusta el ancho para ocupar el 100% del contenedor padre */
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Borde verde en todos los lados */
+    border-radius: 0; /* Bordes rectangulares */
+    background-color: #f9f9f9; /* Fondo blanco suave */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    position: relative; /* Posiciona el contenedor en relación con el contenedor padre */
+    margin-bottom: 20px; /* Espacio debajo del formulario */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%; /* Ajusta el ancho para el relleno interno */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Botón verde */
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049; /* Color del botón al pasar el ratón */
+}
